@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Test Page</title>
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+ 
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+<body style="max-width: 1000px; margin: 0px auto;">
+    <p align="center"> <b> TAMU HACK 2020 WEBSITE! </b></p>
+    
+    <input id="input"/>
+    
+    <button id="button">Enter</button>
+    <script>
+        $("#button").on('click', function(e) {
+          var inputText = ""
+          inputText = $("#input").val();
+          console.log('Clicked', inputText)
+
+          axios.get('http://jsonplaceholder.typicode.com/posts')
+            .then(function (response) {
+              // handle success
+              console.log(response);
+              // add map / button 
+            })
+            .catch(function (error) {
+              // handle error
+              console.log(error);
+            })
+            .finally(function () {
+              // always executed
+            });
+
+          axios.post('/user', {
+              firstName: 'Fred',
+              lastName: 'Flintstone'
+            })
+            .then(function (response) {
+              console.log(response);
+            })
+            .catch(function (error) {
+              console.log(error);
+            });
+
+        });
+    </script>
+
+</body>
+</html>
