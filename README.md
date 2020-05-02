@@ -2,6 +2,7 @@
 TAMU HACK 2020
 
 MEMBERS
+
 John Gutierrez, Adrian Shi, Nathan Purwosumarto, Rishi Phatak
 (johng2000@tamu.edu, adrianshidaasian@gmail.com, npurwosumarto@tamu.edu, rishi.phatak1@gmail.com)
 
